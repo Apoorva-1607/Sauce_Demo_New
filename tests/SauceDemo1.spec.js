@@ -1,7 +1,7 @@
 import {test} from '@playwright/test';
 import env from '../env/env.config.js';
 
-test("End to End testing", async({page}) => {
+test("@e2e End to End testing", async({page}) => {
 
     await page.goto(env.BASE_URI);
 
@@ -43,6 +43,7 @@ test("End to End testing", async({page}) => {
 
     await page.locator("#finish").click();
 
-    await page.waitForTimeout(5000);
+    await page.waitForTimeout(7000);
 
 });
+
