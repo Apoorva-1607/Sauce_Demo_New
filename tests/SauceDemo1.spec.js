@@ -43,7 +43,7 @@ test("@e2e End to End testing", async({page}) => {
 
     await page.locator("#finish").click();
 
-    await page.waitForTimeout(7000);
+    await page.waitForTimeout(2000);
 
 });
 
